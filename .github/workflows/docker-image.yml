@@ -5,6 +5,14 @@ on:
     branches: [ "master" ]
 
 jobs:
+  my-build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: My Build 
+      run: mvn compile
 
   build:
 
